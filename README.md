@@ -186,7 +186,7 @@ Try running a few more expressions in IRB:
 
 ```sh
 > first_number = 7
- => 7 
+ => 7
 > first_number
  => 7
 > puts first_number
@@ -201,7 +201,7 @@ value** is `7`, in the second case, the **return value** is `nil`. Using the
 correct return value will become more important once we start writing methods,
 so remember: the `puts` method **always returns `nil`**.
 
-> In Ruby, it's convention to use underscores (_) to separate words in
+> In Ruby, it's convention to use underscores (\_) to separate words in
 > variables. This is referred to as **snake case** (as opposed to **camel
 > case**, which is the convention in JavaScript).
 
@@ -214,12 +214,6 @@ In this lesson, you'll see a `spec` folder with two files, `app_spec.rb` and
 `spec_helper.rb`. The `spec_helper.rb` file does a bit of general-purpose setup
 for our tests. `app_spec.rb` is where we've defined tests specifically for this
 lesson.
-
-> Think about would happen if we had multiple files in our Ruby application
-> &mdash; how would RSpec know which file we are testing? With RSpec, it's
-> important to follow naming conventions: since our file name is `app.rb`, the
-> corresponding test file is called `app_spec.rb`. This helps RSpec load the
-> correct file when running tests.
 
 RSpec is a Ruby gem (the Ruby equivalent of a npm package) that provides a
 domain-specific language, or DSL, that makes it very nice way to write tests.
@@ -258,35 +252,35 @@ Failures:
 
   1) the program outputs the string "Hello World!" using the puts method
      Failure/Error: expect { load 'app.rb' }.to output(a_string_including("Hello World!\n")).to_stdout
-     
+
        expected block to output a string including "Hello World!\n" to stdout, but output nothing
        Diff:
        @@ -1 +1 @@
        -(a string including "Hello World!\n")
        +""
-       
+
      # ./spec/app_spec.rb:10:in `block (2 levels) in <top (required)>'
 
   2) the program outputs the string "Pass this test, please." using the print method
      Failure/Error: expect { load 'app.rb' }.to output(a_string_including("Pass this test, please.")).to_stdout
-     
+
        expected block to output a string including "Pass this test, please." to stdout, but output nothing
        Diff:
        @@ -1 +1 @@
        -(a string including "Pass this test, please.")
        +""
-       
+
      # ./spec/app_spec.rb:14:in `block (2 levels) in <top (required)>'
 
   3) the program outputs the array [1, 2, 3] using the p method
      Failure/Error: expect { load 'app.rb' }.to output(a_string_including("[1, 2, 3]\n")).to_stdout
-     
+
        expected block to output a string including "[1, 2, 3]\n" to stdout, but output nothing
        Diff:
        @@ -1 +1 @@
        -(a string including "[1, 2, 3]\n")
        +""
-       
+
      # ./spec/app_spec.rb:18:in `block (2 levels) in <top (required)>'
 
 Finished in 0.04406 seconds (files took 0.28088 seconds to load)
@@ -323,13 +317,13 @@ Failures:
 
   1) the program outputs the string "Hello World!" using the puts method
      Failure/Error: expect { load 'app.rb' }.to output(a_string_including("Hello World!\n")).to_stdout
-     
+
        expected block to output a string including "Hello World!\n" to stdout, but output nothing
        Diff:
        @@ -1 +1 @@
        -(a string including "Hello World!\n")
        +""
-       
+
      # ./spec/app_spec.rb:10:in `block (2 levels) in <top (required)>'
 
 Finished in 0.0389 seconds (files took 0.24407 seconds to load)
