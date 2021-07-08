@@ -7,9 +7,15 @@
 - Run Ruby code from IRB
 - Run RSpec tests in Ruby
 
+## Introduction
+
+In this lesson, you'll get some practice running Ruby code, and see a few
+different ways to check what your code is doing. Make sure to code along to get
+comfortable in this new environment!
+
 ## Creating a Ruby Application
 
-Let's dive right in! To get started on any new Ruby application, the first thing
+Let's dive right in. To get started on any new Ruby application, the first thing
 we need is a file. Create a new file in this lab directory called `app.rb`. In
 this file, add the following:
 
@@ -82,7 +88,7 @@ puts "Hello world!"
 ```
 
 Run the application with `ruby app.rb`. Then change `puts` to `print` and run
-it again:
+it again to see the difference in output:
 
 ```rb
 # app.rb
@@ -204,6 +210,8 @@ so remember: the `puts` method **always returns `nil`**.
 > In Ruby, it's convention to use underscores (\_) to separate words in
 > variables. This is referred to as **snake case** (as opposed to **camel
 > case**, which is the convention in JavaScript).
+
+You can exit IRB by typing `exit`, or pressing `ctrl + d`.
 
 ## Running RSpec Tests
 
