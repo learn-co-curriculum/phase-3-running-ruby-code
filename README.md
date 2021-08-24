@@ -50,7 +50,7 @@ Unlike JavaScript, you won't be running Ruby applications in the browser.
 Instead, you'll need to use the Ruby interpreter to run your code from the
 terminal. You can check which version of Ruby you're using with this command:
 
-```sh
+```console
 $ ruby -v
 ruby 2.7.3p183 (2021-04-05 revision 6847ee089d) [x86_64-darwin19]
 ```
@@ -58,7 +58,7 @@ ruby 2.7.3p183 (2021-04-05 revision 6847ee089d) [x86_64-darwin19]
 To run the application, enter the command `ruby filename.rb`, where
 `filename.rb` is the relative path to the file you'd like to run:
 
-```sh
+```console
 $ ruby app.rb
 Hello world!
 ```
@@ -116,7 +116,7 @@ data to a string by calling the `.to_s` method. In the case of arrays, this will
 produce the following output, with each element of the array printed to a new
 line in the console:
 
-```sh
+```console
 $ ruby app.rb
 1
 2
@@ -134,7 +134,7 @@ p [1, 2, 3]
 The `p` method will output the data in a nicer format by calling the `.inspect`
 method on our data.
 
-```sh
+```console
 $ ruby app.rb
 [1, 2, 3]
 ```
@@ -150,7 +150,7 @@ pp [{ id: 1, hello: "World" }, { id: 2, hello: "Ruby" }, { id: 3, hello: "Moon" 
 The `pp` method will "pretty-print" these objects by calling the
 `.pretty_inspect` method on our data.
 
-```sh
+```console
 $ ruby app.rb
 [{:id=>1, :hello=>"World"},
  {:id=>2, :hello=>"Ruby"},
@@ -168,7 +168,7 @@ to run an entire application.
 
 To use IRB, go into the terminal and enter `irb`:
 
-```sh
+```console
 $ irb
 2.7.3 :001 >
 ```
@@ -176,7 +176,7 @@ $ irb
 This gives you a prompt where you can enter Ruby code. Try entering in
 `puts "Hello IRB"`:
 
-```sh
+```console
 2.7.3 :001 > puts "Hello IRB"
 Hello IRB
  => nil
@@ -190,7 +190,7 @@ value", similar to `null` in JavaScript.
 
 Try running a few more expressions in IRB:
 
-```sh
+```console
 > first_number = 7
  => 7
 > first_number
@@ -247,7 +247,7 @@ tests to pass.
 To run the tests, you can use either the `rspec` command or `learn test`. Run
 the command, then take a moment to study the output:
 
-```sh
+```console
 $ learn test
 
 the program
@@ -314,7 +314,7 @@ You can also use the `--fail-fast`, or `--f-f` flag to tell RSpec to stop runnin
 after the first failing test. This technique is helpful for focusing your attention
 on one problem at a time:
 
-```sh
+```console
 $ learn test --f-f
 
 the program
