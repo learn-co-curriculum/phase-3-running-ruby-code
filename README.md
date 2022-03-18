@@ -73,8 +73,8 @@ your code as you are writing it.
 
 ### Outputting Strings with `puts` and `print`
 
-Ruby several methods for printing output to the terminal: `puts`, `print`, `p`,
-and `pp`.
+Ruby has several methods for printing output to the terminal: `puts`, `print`,
+`p`, and `pp`.
 
 `print` and `puts` do almost the same thing; the only difference is that `puts`
 will add a line break at the end of the string. Try updating the code in
